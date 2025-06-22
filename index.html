@@ -9,16 +9,31 @@
 </head>
 
 <body>
+  <div class="animated-bg">
+  <span class="circle" style="left: 10%; animation-delay: 0s;"></span>
+  <span class="triangle" style="left: 25%; animation-delay: 1s;"></span>
+  <span class="emoji" style="left: 40%; animation-delay: 2s;">✨</span>
+  <span class="svg-star" style="left: 60%; animation-delay: 3s;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fb3afb">
+      <path d="M12 .587l3.668 7.431L24 9.748l-6 5.848 1.417 8.269L12 18.896l-7.417 4.969L6 15.596 0 9.748l8.332-1.73z"/>
+    </svg>
+  </span>
+  <span class="circle" style="left: 80%; animation-delay: 4s;"></span>
+</div>
+
   <div class="container">
     <nav>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+   
+
 
     <section class="hero">
       <div class="content">
@@ -33,10 +48,15 @@
           <button class="outline">Download CV</button>
         </div>
         <div class="social-icons">
-  <a href="#"><i class="fab fa-instagram"></i></a>
-  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-  <a href="#"><i class="fab fa-github"></i></a>
-
+  <a href="#" class="tooltip" data-tooltip="@FEBA-JOSY">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="#" class="tooltip" data-tooltip="@feba_insta">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="#" class="tooltip" data-tooltip="@feba-linkedin">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
 </div>
 
       </div>
@@ -61,6 +81,7 @@
    
 
 <!-- New Section -->
+<section>
 <section class="about-section" id="about">
   <h2>About Me</h2>
   <p>
@@ -78,11 +99,17 @@ Exploring AI, UI/UX Design, and Frontend Development
 
 Driving women-led innovation and entrepreneurship
 
-Public speaking, planning tech events, and mentoring peers
+Public speaking, planning tech events, and mentoring peers.
   </p>
+  </section>
+ 
 </section>
+<section>
+   <section id="skills" class="edu-skill-section"></section>
 <section class="edu-skill-section">
+  
   <div class="education-box">
+    
     <h2>Education</h2>
     <div class="education-boxes">
       <div class="edu-card">
@@ -144,13 +171,17 @@ Public speaking, planning tech events, and mentoring peers
     </div>
   </div>
 </div>
-
+</section>
 </section>
 
 
-</section>
+
+
+
 <section class="projects-section" id="projects">
+
   <h2><span>My</span> Projects</h2>
+
   <div class="projects-container">
     
     <div class="project-card">
@@ -164,6 +195,8 @@ Public speaking, planning tech events, and mentoring peers
     <!-- Add more cards as needed -->
   </div>
 </section>
+
+
 
 
 
